@@ -1,0 +1,103 @@
+.reset{
+  width:100vw;
+  height:100vh;
+  position:fixed;
+  left:0;
+  top:0;
+  background:black;
+}
+
+.greenpoint{
+  position:absolute;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  width:100px;
+  height:100px;
+  background-color:green;
+  margin: auto;
+  border-radius: 50%;
+  animation: pulsate infinite 1s;
+}
+@keyframes pulsate {
+  0% {
+    -webkit-transform: scale(1, 1);
+  }
+  50%{
+    -webkit-transform: scale(1.5, 1.5);
+}
+  100% {
+    -webkit-transform: scale(1, 1);
+  }
+}
+
+.cards{
+  display:flex;
+  height:100%;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items:center;
+  /*cursor: none;*/
+}
+h1{
+  text-align:center;
+  margin-top:40px;
+}
+.card img{
+  height:calc(100% - 5vh - 60px);
+  width:100%;
+  object-fit: contain;
+  transition:.3s all linear;
+}
+.card{
+  transition:.3s all linear;
+  border-radius:0 !important;
+}
+
+.card.sel{
+  border-width: 5px;
+  border-color:red;
+}
+
+.card.sel img{
+  height:525px;
+  width:670px;
+}
+
+.card.sel h3{
+  color:red;
+}
+
+.card-txt{
+  color:white;
+  background:black;
+  text-align: center;
+}
+
+.card-txt h3{
+  font-size:5vh;
+  text-transform: uppercase;
+  padding:20px 0;
+}
+.card.blank{
+  pointer-events: none;
+}
+.blank-card{
+  height:500px;
+  width:600px;
+  background:white;
+}
+
+@keyframes prespulse {
+  0%   {width:70%}
+  50%  {width:60%}
+  100%  {width:70%}
+}
+
+.pres-img img{
+  animation-name: prespulse;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  object-fit: contain;
+}
