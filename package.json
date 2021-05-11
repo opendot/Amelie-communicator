@@ -27,7 +27,7 @@
     "history": "^4.7.2",
     "jquery": "^3.2.1",
     "lamejs": "^1.2.0",
-    "lodash": "^4.17.4",
+    "lodash": "^4.17.21",
     "node-fetch": "^1.7.3",
     "object-assign": "^4.1.1",
     "p5": "^0.6.1",
