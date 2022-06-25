@@ -28,7 +28,7 @@
     "jquery": "^3.2.1",
     "lamejs": "^1.2.0",
     "lodash": "^4.17.4",
-    "node-fetch": "^1.7.3",
+    "node-fetch": "^2.6.7",
     "object-assign": "^4.1.1",
     "p5": "^0.6.1",
     "promise": "^7.1.1",
